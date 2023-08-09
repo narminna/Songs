@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(226, 226, 226);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.song1,.song2, .song3{
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    background-color: rgb(250, 250, 250);
+    border: 5px solid rgb(250, 250, 250);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    transition: 0.5 all linear;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.song1{    
+    left: 30%;
+}
+.song1:hover, .song2:hover, .song3:hover{
+    transform: translate(-50%, -50%) scale(1.2);
+}
+.song2{
+    left: 50%;    
+}
+.song3{
+    left: 70%;
+}
+.song-name {
+    margin-top: 10px;
+    text-align: center;
+}
+.artist-name {
+    margin-top: 5px;
+    color: #999999;
+    font-size: 14px;
+}
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+.name{
+    text-align:left;
+    font-family: 'proxima-nova', sans-serif;
+    color: rgb(73, 72, 72);
+}
+.button{
+    margin-top: 15px;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    background-color: #1DB954;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+.button-container > button>i{
+    transition: 250ms all linear;
+}
+.button-container > button:hover>i{
+    transform: translate(0, -50%);
+}
+.button i{
+    margin-right: 6px;
+}
+.button:hover {
+    background-color: #1AA34A;
+}
